@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <!-- Favicon commented out - file not found -->
+    <!-- <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon"> -->
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Ashok Portfolio</title>
+</head>
+
+<body>
+    <!--==================== CUSTOM CURSOR ===============-->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+    
+    <!--==================== PARTICLE BACKGROUND ===============-->
+    <canvas id="particles-canvas" class="particles-canvas"></canvas>
+    
+    <!--==================== SCROLL PROGRESS BAR ===============-->
+    <div class="scroll-progress" id="scroll-progress"></div>
+    
+    <!--==================== LOADING SCREEN ===============-->
+    <div class="loader" id="loader">
+        <div class="loader__content">
+            <div class="loader__spinner"></div>
+            <div class="loader__text">Loading Portfolio...</div>
+        </div>
+    </div>
+
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                Ashok Joshi
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="ri-home-line"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="ri-code-line"></i> Skills
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#qualification" class="nav__link">
+                            <i class="ri-book-line"></i> Qualifications
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">
+                            <i class="ri-macbook-line"></i> Projects
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="ri-chat-4-line"></i> Contact Me
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+
+            </div>
+
+            <div class="nav__buttons">
+                <!-- Theme change button -->
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid section__border">
+                <div class="home__data grid">
+                    <h1 class="home__title">
+                        Hi, I'm Ashok Joshi <br>
+                        React Frontend Developer <br>
+                    </h1>
+                    <div class="home__blob grid">
+                        <div class="home__perfil">
+                            <img src="assets/img/ashok.png" alt="home perfil" id="profile-image-user">
+                        </div>
+                        <img src="assets/img/shape-wawes.svg" alt="" class="home__shape-wawes">
+                        <img src="assets/img/shape-circle.svg" alt="" class="home__shape-circle">
+                    </div>
+                    <ul class="home__social">
+                        <a href="https://www.linkedin.com/in/ashok-joshi-569434330/" target="_blank"
+                            class="home__social-link">
+                            <i class="ri-linkedin-box-line"></i>
+                        </a>
+                        <a href="https://www.github.com/ashok1498" target="_blank" class="home__social-link">
+                            <i class="ri-github-line"></i>
+                        </a>
+                        <a href="https://www.twitter.com/AshokJoshi121" target="_blank" class="home__social-link">
+                            <i class="ri-twitter-line"></i>
+                        </a>
+                    </ul>
+                </div>
+                <!--==================== HOME INFO 1 ====================-->
+                <div class="home__info">
+                    <div class="home__info-card home__info-biography">
+                        <div class="home__info-header">
+                            <i class="ri-user-line home__info-icon"></i>
+                            <h3 class="home__info-title">
+                                BIOGRAPHY
+                            </h3>
+                        </div>
+                        <p class="home__info-description">
+                            Motivated React Frontend Developer with hands-on experience in building responsive and dynamic web applications using React.js. Comfortable working with component-based architecture, React hooks, state management, and API integration. Enjoys creating clean, user-friendly interfaces with a focus on performance and maintainable, scalable frontend solutions.
+                        </p>
+                    </div>
+                    <div class="home__info-card home__info-contact">
+                        <div class="home__info-header">
+                            <i class="ri-contacts-line home__info-icon"></i>
+                            <h3 class="home__info-title">
+                                CONTACT
+                            </h3>
+                        </div>
+                        <div class="home__info-contact-list">
+                            <div class="home__info-contact-item">
+                                <i class="ri-map-pin-line"></i>
+                                <span>Shantinagar-31, Kathmandu, Nepal</span>
+                            </div>
+                            <div class="home__info-contact-item">
+                                <i class="ri-mail-line"></i>
+                                <a href="mailto:joashok011@gmail.com">joashok011@gmail.com</a>
+                            </div>
+                            <div class="home__info-contact-item">
+                                <i class="ri-phone-line"></i>
+                                <a href="tel:+9779866109943">+977-9866109943</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div>
+                        <h3 class="home__info-title">
+                            ACHIEVEMENTS
+                        </h3>
+                        <p class="home__info-description">
+                            Winner - Smart India Hackathon, 2022 <br>
+                            Selected as - GitHub Extern, 2022 <br>
+                        </p>
+                    </div> -->
+                </div>
+
+                <!--==================== HOME STATS ====================-->
+                <div class="home__stats">
+                    <div class="home__stat-card">
+                        <div class="home__stat-icon">
+                            <i class="ri-graduation-cap-line"></i>
+                        </div>
+                        <div class="home__stat-content">
+                            <h3 class="home__stat-title">GRADUATING IN</h3>
+                            <p class="home__stat-number" data-target="2025">2025</p>
+                        </div>
+                    </div>
+                    <div class="home__stat-card">
+                        <div class="home__stat-icon">
+                            <i class="ri-project-line"></i>
+                        </div>
+                        <div class="home__stat-content">
+                            <h3 class="home__stat-title">COMPLETED PROJECTS</h3>
+                            <p class="home__stat-number" data-target="5">5+</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--==================== SKILLS ====================-->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">
+                Skills
+            </h2>
+            <span class="section__subtitle">
+                My top skills
+            </span>
+            <div class="skills__container container grid section__border">
+                <!--==================== SKILLS 1 ====================-->
+                <div class="skills__content">
+                    <h3 class="skills__title">
+                        <i class="ri-braces-line"></i> Frontend Technologies
+                    </h3>
+                    <div class="skills__info">
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <i class="ri-reactjs-line"></i>
+                            </div>
+                            <h3 class="skills__name">
+                                React.js
+                            </h3>
+                            <span class="skills__subtitle">
+                                Advanced
+                            </span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <i class="ri-html5-line"></i>
+                            </div>
+                            <h3 class="skills__name">
+                                HTML/CSS
+                            </h3>
+                            <span class="skills__subtitle">
+                                Advanced
+                            </span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <svg width="40" height="40" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <linearGradient id="jsGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#F7DF1E;stop-opacity:1" />
+                                            <stop offset="50%" style="stop-color:#F0DB4F;stop-opacity:1" />
+                                            <stop offset="100%" style="stop-color:#E8D547;stop-opacity:1" />
+                                        </linearGradient>
+                                    </defs>
+                                    <path d="M20,15 L100,15 L100,95 L60,105 L20,95 Z" fill="url(#jsGradient)" stroke="#323330" stroke-width="1.5"/>
+                                    <text x="60" y="65" font-family="Arial Black, Arial, sans-serif" font-size="42" font-weight="900" fill="#000000" text-anchor="middle" dominant-baseline="middle" opacity="0.9">JS</text>
+                                </svg>
+                            </div>
+                            <h3 class="skills__name">
+                                JavaScript
+                            </h3>
+                            <span class="skills__subtitle">
+                                Advanced
+                            </span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <i class="ri-cloud-line"></i>
+                            </div>
+                            <h3 class="skills__name">
+                                API Integration
+                            </h3>
+                            <span class="skills__subtitle">
+                                Advanced
+                            </span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <i class="ri-git-branch-line"></i>
+                            </div>
+                            <h3 class="skills__name">
+                                Git
+                            </h3>
+                            <span class="skills__subtitle">
+                                Advanced
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!--==================== SKILLS 2 ====================-->
+                <div class="skills__content">
+                    <h3 class="skills__title">
+                        <i class="ri-braces-line"></i> Key Strengths
+                    </h3>
+                    <div class="skills__info">
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/icons8-binary-code-100.png" alt="React Fundamentals">
+                            </div>
+                            <h3 class="skills__name">
+                                React Fundamentals
+                            </h3>
+                            <span class="skills__subtitle">
+                                Strong
+                            </span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/icons8-plugin-100.png" alt="Clean Code">
+                            </div>
+                            <h3 class="skills__name">
+                                Clean Code
+                            </h3>
+                            <span class="skills__subtitle">
+                                Maintainable
+                            </span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/icons8-database-100.png" alt="UI/UX Focus">
+                            </div>
+                            <h3 class="skills__name">
+                                UI/UX Focus
+                            </h3>
+                            <span class="skills__subtitle">
+                                User-Centered
+                            </span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/icons8-console-100.png" alt="Team Collaboration">
+                            </div>
+                            <h3 class="skills__name">
+                                Team Player
+                            </h3>
+                            <span class="skills__subtitle">
+                                Collaborative
+                            </span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/icons8-multicast-100.png" alt="Quick Learner">
+                            </div>
+                            <h3 class="skills__name">
+                                Quick Learner
+                            </h3>
+                            <span class="skills__subtitle">
+                                Adaptable
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== QUALIFICATION ====================-->
+        <section class="qualification section" id="qualification">
+            <h2 class="section__title">
+                Qualifications
+            </h2>
+            <span class="section__subtitle">
+                Experience and Education
+            </span>
+            <div class="qualification__container container grid section__border">
+                <!--==================== QUALIFICATION 1 ====================-->
+                <div class="qualification__content">
+                    <h3 class="qualification__title">
+                        <i class="ri-book-line"></i> Education
+                    </h3>
+                    <div class="qualification__info">
+                        <div>
+                            <h3 class="qualification__name">
+                                Bachelor of Computer Applications (BCA)
+                            </h3>
+                            <span class="qualification__country">
+                                Ratna Rajya Laxmi Campus, Tribhuvan University
+                            </span>
+                            <span class="qualification__year">
+                                2025
+                            </span>
+                        </div>
+                        <div>
+                            <h3 class="qualification__name">
+                                +2 Science
+                            </h3>
+                            <span class="qualification__country">
+                                Kailali Model Secondary School
+                            </span>
+                            <span class="qualification__year">
+                                2020
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!--==================== QUALIFICATION 2 ====================-->
+                <div class="qualification__content">
+                    <h3 class="qualification__title">
+                        <i class="ri-building-line"></i> Experience
+                    </h3>
+                    <div class="qualification__info">
+                        <div>
+                            <h3 class="qualification__name">
+                                React Frontend Intern
+                            </h3>
+                            <span class="qualification__country">
+                                Kitwosd IT Support Center, Imadol-Nepal
+                            </span>
+                            <span class="qualification__year">
+                                Nov 2024 – Feb 2025
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                            <img src="assets/img/shape-circle.svg" alt="qualification image" class="qualification__img">
+        </section>
+
+        <!--==================== ACHIEVEMENTS ====================-->
+        <!-- <section class="achievements section" id="achievements">
+                <h2 class="section__title">
+                    Achievements
+                </h2>
+                <span class="section__subtitle">
+                    What makes me stand out
+                </span>
+                <div class="achievements__container container grid section__border">
+                    <div class="achievements__card">
+                        <i class="ri-trophy-line"></i>
+                        <h2 class="achievements__title">
+                            Winner <br>
+                            Smart India Hackathon 2022
+                        </h2>
+                        <p class="achievements__description">
+                            Led a team of 6 and won Smart India Hackathon, the biggest hackathon of India.
+                        </p>
+                        <div class="achievements__border">
+                        </div>
+                    </div>
+                    <div class="achievements__card">
+                        <i class="ri-code-line"></i>
+                        <h2 class="achievements__title">
+                            Mentee <br>
+                            GitHub Externship 2022
+                        </h2>
+                        <p class="achievements__description">
+                            Selected as a GitHub Extern amongst 14000+ applicants.
+                        </p>
+                        <div class="achievements__border">
+                        </div>
+                    </div>
+                    <div class="achievements__card">
+                        <i class="ri-trophy-line"></i>
+                        <h2 class="achievements__title">
+                            Finalist <br>
+                            Hack N Pitch 2021
+                        </h2>
+                        <p class="achievements__description">
+                            Led a team of 5 and developed a full stack social media Android app.
+                        </p>
+                        <div class="achievements__border">
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+        <!--==================== PROJECTS ====================-->
+        <section class="projects section" id="projects">
+            <h2 class="section__title">
+                Projects
+            </h2>
+            <span class="section__subtitle">
+                My personal projects
+            </span>
+            <div class="container section__border">
+                <div class="projects__container swiper">
+                    <div class="swiper-wrapper">
+                        <!--==================== PROJECT 1 ====================-->
+                        <div class="projects__content swiper-slide">
+                            <img src="assets/img/project1.png" alt="Gym Management System" class="projects__img">
+                            <div>
+                                <span class="projects__subtitle">
+                                    MERN Stack - React Frontend
+                                </span>
+                                <h1 class="projects__title">
+                                    Gym Management System
+                                </h1>
+                                <p class="projects__description">
+                                    Developed React dashboards with authentication, dynamic data rendering, and backend API integration.
+                                </p>
+                            </div>
+                        </div>
+                        <!--==================== PROJECT 2 ====================-->
+                        <div class="projects__content swiper-slide">
+                            <img src="assets/img/Project2.png" alt="E-commerce Frontend" class="projects__img">
+                            <div>
+                                <span class="projects__subtitle">
+                                    React.js - Frontend
+                                </span>
+                                <h1 class="projects__title">
+                                    E-commerce Frontend Application
+                                </h1>
+                                <p class="projects__description">
+                                    Built reusable product and cart components with responsive layouts and state management.
+                                </p>
+                            </div>
+                        </div>
+                        <!--==================== PROJECT 3 ====================-->
+                        <div class="projects__content swiper-slide">
+                            <img src="assets/img/project3.jpg" alt="QR Code Attendance System" class="projects__img">
+                            <div>
+                                <span class="projects__subtitle">
+                                    React.js - Frontend
+                                </span>
+                                <h1 class="projects__title">
+                                    QR Code Attendance System
+                                </h1>
+                                <p class="projects__description">
+                                    Designed QR-based attendance UI with real-time display and optimized components.
+                                </p>
+                            </div>
+                        </div>
+                        <!--==================== PROJECT 4 ====================-->
+                        <div class="projects__content swiper-slide">
+                            <img src="assets/img/project4.jpg" alt="Nisarga Hospital" class="projects__img">
+                            <div>
+                                <span class="projects__subtitle">
+                                    React.js - Frontend
+                                </span>
+                                <h1 class="projects__title">
+                                    Nisarga Hospital Pvt. Ltd.
+                                </h1>
+                                <p class="projects__description">
+                                    Created a clean, responsive hospital website interface using React.
+                                </p>
+                            </div>
+                        </div>
+                        <!--==================== PROJECT 5 ====================-->
+                        <div class="projects__content swiper-slide">
+                            <img src="assets/img/project11.jpg" alt="Care & Clean Nepal" class="projects__img">
+                            <div>
+                                <span class="projects__subtitle">
+                                    React.js - Frontend
+                                </span>
+                                <h1 class="projects__title">
+                                    Care & Clean Nepal
+                                </h1>
+                                <p class="projects__description">
+                                    Developed a service-oriented responsive frontend focusing on usability and layout consistency.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Swiper arrows -->
+                    <div class="swiper-button-next">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </div>
+                    <!-- Swiper pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+        </section>
+
+        <!--==================== TESTIMONIAL ====================-->
+
+        <!-- <section class="testimonial section"></section> -->
+
+        <!--==================== CONTACT ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">
+                Contact Me
+            </h2>
+            <span class="section__subtitle">
+                Get in touch
+            </span>
+            <div class="contact__container container grid section__border">
+                <div class="contact__content">
+                    <h3 class="contact__title">
+                        <i class="ri-chat-3-line"></i>
+                        Text me
+                    </h3>
+                    <div class="contact__info">
+                        <div class="contact__data">
+                            <span class="contact__data-title">
+                                Email
+                            </span>
+                            <span class="contact__data-info">
+                                joashok011@gmail.com
+                            </span>
+                        </div>
+                        <div class="contact__data">
+                            <span class="contact__data-title">
+                                WhatsApp
+                            </span>
+                            <span class="contact__data-info">
+                                +977 9866109943
+                            </span>
+                            <a href="https://api.whatsapp.com/send?phone=+9779866109943&text=Hello, more information!"
+                                target="_blank" class="contact__button">
+                                Text me <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                        <div class="contact__data">
+                            <span class="contact__data-title">
+                                Telegram
+                            </span>
+                            <span class="contact__data-info">
+                                https://t.me/Ashokjoshi121
+                            </span>
+                            <a href="https://t.me/Ashokjoshi121" target="_blank" class="contact__button">
+                                Text me <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact__content">
+                    <h3 class="contact__title">
+                        <i class="ri-send-plane-line"></i> Have a query for me?
+                    </h3>
+                    <form action="" class="contact__form" id="contact-form">
+                        <div class="contact__form-div">
+                            <label class="contact__form-tag">
+                                Name
+                            </label>
+                            <input type="text" name="user_name" required placeholder="Your name"
+                                class="contact__form-input" id="contact-name">
+                        </div>
+                        <div class="contact__form-div">
+                            <label class="contact__form-tag">
+                                Email
+                            </label>
+                            <input type="email" name="user_email" required placeholder="Your email"
+                                class="contact__form-input" id="contact-email">
+                        </div>
+                        <div class="contact__form-div contact__form-area">
+                            <label class="contact__form-tag">
+                                Text
+                            </label>
+                            <textarea name="user_project" placeholder="Ask me something?" id="contact-project"
+                                class="contact__form-input"></textarea>
+                        </div>
+                        <p class="contact__message" id="contact-message"></p>
+                        <button type="submit" class="contact__button">
+                            Send <i class="ri-arrow-right-up-line"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">
+                Ashok Joshi
+            </h1>
+            <p>
+                React Frontend Developer
+            </p>
+            <ul class="footer__list">
+                <li>
+                    <a href="#home" class="footer__link">Home</a>
+                </li>
+                <li>
+                    <a href="#skills" class="footer__link">Skills</a>
+                </li>
+                <li>
+                    <a href="#projects" class="footer__link">Projects</a>
+                </li>
+            </ul>
+            <ul class="footer__social">
+                <a href="https://www.linkedin.com/in/ashok-joshi-569434330/" target="_blank"
+                    class="footer__social-link">
+                    <i class="ri-linkedin-box-line"></i>
+                </a>
+                <a href="https://www.github.com/ashok1498" target="_blank" class="footer__social-link">
+                    <i class="ri-github-line"></i>
+                </a>
+                <a href="https://www.twitter.com/AshokJoshi121" target="_blank" class="footer__social-link">
+                    <i class="ri-twitter-line"></i>
+                </a>
+            </ul>
+            <span class="footer__copy">
+                &#169; Copyright Ashok. All rights reserved.
+            </span>
+        </div>
+    </footer>
+
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== EMAIL JS ===============-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
